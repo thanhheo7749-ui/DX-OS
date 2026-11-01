@@ -1,0 +1,6 @@
+.env
+.omc/
+node_modules/
+app/dist/
+.playwright-mcp/
+docs/notes/

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+# Declares licenses for files that cannot carry a comment header (https://reuse.software).
+version = 1
+
+[[annotations]]
+path = ["**/*.json", ".gitignore", "**/.dockerignore", ".github/**/*.yml", "NOTICE"]
+SPDX-FileCopyrightText = "2026 DX-OS Open-Core contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# Every file shares the same copyright line; files keep their own SPDX-License-Identifier header.
+[[annotations]]
+path = ["**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 DX-OS Open-Core contributors"

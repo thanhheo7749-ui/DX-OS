@@ -1,0 +1,21 @@
+name: 📚 Tài liệu
+description: Tài liệu sai, thiếu hoặc khó hiểu
+labels: [documentation]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Tài liệu nào
+      placeholder: README.md, mục Cài đặt và chạy
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Sai hoặc thiếu gì
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Đề xuất sửa

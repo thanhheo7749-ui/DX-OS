@@ -1,0 +1,52 @@
+name: 🐛 Báo lỗi
+description: Hệ thống chạy sai so với tài liệu
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Cảm ơn bạn đã báo lỗi. Lỗ hổng bảo mật xin báo riêng theo [SECURITY.md](https://github.com/thanhheo7749-ui/dx-os/blob/main/SECURITY.md), không mở issue công khai.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Phần bị lỗi
+      options:
+        - Tầng 1 (Keycloak, APISIX, PostgREST, Flowable, SeaweedFS)
+        - Tầng 2 - BFF / agent AI
+        - Tầng 2 - giao diện
+        - Quy trình BPMN
+        - Script cài đặt, kiểm thử
+        - Khác
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Cách tái hiện
+      description: Từng bước, kèm tài khoản thử đã dùng
+      placeholder: "1. Đăng nhập sales1\n2. Tạo đơn thiếu mã số thuế\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Kết quả mong đợi và kết quả thực tế
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Phiên bản hoặc commit
+      placeholder: v0.1.0 hoặc 85083ff
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Môi trường
+      placeholder: Windows 11, Docker Desktop 4.x, có/không GPU
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log liên quan
+      description: Kết quả của `docker compose logs <dịch vụ> --tail 50`
+      render: text

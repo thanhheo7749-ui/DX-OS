@@ -1,0 +1,13 @@
+DX-OS Open-Core
+Copyright 2026 DX-OS Open-Core contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The initial code base (Tier 1 platform and the approvals demo app) comes from the
+mentor's sample repository olp-2026-os (GitHub: anhnguyen888), also Apache-2.0.
+Its original commits keep their author when that code is added to this repository.
+
+Third-party components run from their official Docker images and are not bundled.
+
+CODE_OF_CONDUCT.md is adapted from the Contributor Covenant, version 2.1
+(https://www.contributor-covenant.org), licensed CC-BY-4.0.

@@ -1,0 +1,35 @@
+name: ✨ Đề xuất tính năng
+description: Việc mới cho Tầng 1 hoặc Tầng 2
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Thuộc phần nào
+      options:
+        - Tầng 1 (lõi headless)
+        - "Tầng 2 [H] Con người"
+        - "Tầng 2 [P] Quy trình"
+        - "Tầng 2 [D] Dữ liệu"
+        - "Tầng 2 [I] Trí tuệ"
+        - Tài liệu / PoF
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Vấn đề cần giải quyết
+      description: Ai gặp vấn đề, trong tình huống nào
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Đề xuất
+  - type: textarea
+    id: done
+    attributes:
+      label: Tiêu chí xong
+      placeholder: "- [ ] ...\n- [ ] ..."
+    validations:
+      required: true
