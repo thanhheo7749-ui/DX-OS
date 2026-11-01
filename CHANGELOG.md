@@ -9,3 +9,4 @@
 - Khung dự án: giấy phép Apache-2.0 (`LICENSE`, `LICENSES/`, `REUSE.toml`), `NOTICE`, `CONTRIBUTING.md` (mô hình nhánh `main`, `develop`, `docs`, `release/*`), `CODE_OF_CONDUCT.md`, `SECURITY.md`, `.editorconfig`.
 - Mẫu issue (báo lỗi, đề xuất tính năng, tài liệu) và mẫu Pull Request.
 - Workflow chỉ cho Pull Request vào `main` từ nhánh `release/*` hoặc `hotfix/*`.
+- Bộ tài liệu `docs/`: kiến trúc, hướng dẫn sử dụng, dựng môi trường, API, mô hình dữ liệu, quy ước mã.
