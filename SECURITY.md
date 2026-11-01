@@ -3,11 +3,11 @@
 
 ## Phiên bản được hỗ trợ
 
-Chỉ bản phát hành mới nhất trên trang [Releases](https://github.com/thanhheo7749-ui/dx-os/releases) được sửa lỗi bảo mật.
+Chỉ bản phát hành mới nhất trên trang [Releases](https://github.com/thanhheo7749-ui/DX-OS/releases) được sửa lỗi bảo mật.
 
 ## Báo lỗ hổng
 
-**Không mở issue công khai cho lỗ hổng.** Dùng [Security → Report a vulnerability](https://github.com/thanhheo7749-ui/dx-os/security/advisories/new) của kho mã nguồn.
+**Không mở issue công khai cho lỗ hổng.** Dùng [Security → Report a vulnerability](https://github.com/thanhheo7749-ui/DX-OS/security/advisories/new) của kho mã nguồn.
 
 Xin ghi: phiên bản hoặc commit, cách tái hiện, ảnh hưởng. Đội phản hồi trong 3 ngày làm việc và báo lại khi đã sửa.
 
