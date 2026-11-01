@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: Apache-2.0
+# main only takes releases: a pull request into main must come from release/* or hotfix/*.
+# Everything else goes to develop (see CONTRIBUTING.md, "Mô hình nhánh").
+name: PR vào main
+on:
+  pull_request:
+    branches: [main]
+permissions: {}
+jobs:
+  nhanh-nguon:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Chỉ nhận release/* hoặc hotfix/*
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          case "$HEAD_REF" in
+            release/*|hotfix/*) echo "ok: $HEAD_REF" ;;
+            *) echo "::error::PR vào main chỉ nhận từ release/* hoặc hotfix/*. Nhánh '$HEAD_REF': đổi base sang develop."; exit 1 ;;
+          esac

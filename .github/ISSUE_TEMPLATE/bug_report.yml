@@ -4,7 +4,7 @@ labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: Cảm ơn bạn đã báo lỗi. Lỗ hổng bảo mật xin báo riêng theo [SECURITY.md](https://github.com/thanhheo7749-ui/dx-os/blob/main/SECURITY.md), không mở issue công khai.
+      value: Cảm ơn bạn đã báo lỗi. Lỗ hổng bảo mật xin báo riêng theo [SECURITY.md](https://github.com/thanhheo7749-ui/DX-OS/blob/main/SECURITY.md), không mở issue công khai.
   - type: dropdown
     id: area
     attributes:
